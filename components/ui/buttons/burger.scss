@@ -1,0 +1,14 @@
+.burger.active {
+  span {
+    margin-top: -3px;
+  }
+  span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  span:nth-child(2) {
+    display: none;
+  }
+}

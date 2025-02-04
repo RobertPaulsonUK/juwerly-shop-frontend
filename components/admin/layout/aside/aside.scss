@@ -1,0 +1,19 @@
+.aside__item-arrow {
+  transition: all .15s ease-in-out;
+}
+.aside__item-arrow.active {
+  transform: rotate(90deg);
+}
+.aside__group-list.active {
+  padding: 20px 50px;
+  opacity: 1;
+  pointer-events: auto;
+  max-height: 100%;
+}
+.aside {
+  transition: all .2s ease-in-out;
+}
+.aside.active {
+  max-width: 100%;
+  @apply sm:max-w-[350px]
+}

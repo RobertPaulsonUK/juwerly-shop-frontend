@@ -8,9 +8,24 @@ export default {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          lg: "1rem",
+        },
+        screens: {
+          xl: "1200px",
+          lg: "1024px",
+          md: "768px",
+          sm: "575px",
+        },
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        white : "#FAFAFA",
+        lightGray : "#A1A1AA",
+        gray : "#3F3F46",
+        blue : "#006FEE",
       },
     },
   },

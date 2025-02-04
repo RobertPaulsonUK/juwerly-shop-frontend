@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import {Roboto} from "next/font/google";
+import Header from "@/components/admin/layout/header";
 
 export const metadata: Metadata = {
-    title: "Juwerly site"
+    title: "Dashboard"
 };
 const roboto = Roboto({
     subsets: ["latin"],
@@ -21,8 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body
       suppressHydrationWarning={true}
-        className={`${roboto.className} bg-white`}
+        className={`${roboto.className}`}
       >
+        <Header/>
         {children}
       </body>
     </html>
