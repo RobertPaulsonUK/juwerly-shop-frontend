@@ -20,7 +20,7 @@ const AsideItem:FC<Props> = (
                   e.preventDefault();
                   clickHandler?.();
               } : undefined}
-              className={`flex justify-items-start gap-[20px] leading-normal text-gray ${classes} ${isMainItem ? 'text-[20px] font-semibold' : 'text-[16px]'} ${isActive ? 'text-blue' : ''}`}>
+              className={`flex justify-items-start gap-[20px] leading-normal ${classes ?? ''} ${isMainItem ? 'text-[20px] font-semibold' : 'text-[16px]'} ${isActive ? 'text-blue' : 'text-gray'}`}>
             {Icon && <Icon/>}
             {title}
         </Link>

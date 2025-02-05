@@ -22,8 +22,8 @@ export default {
         },
       },
       colors: {
-        white : "#FAFAFA",
-        lightGray : "#A1A1AA",
+        white : "#FFF",
+        lightGray : "#d4d4d8",
         gray : "#3F3F46",
         blue : "#006FEE",
       },
